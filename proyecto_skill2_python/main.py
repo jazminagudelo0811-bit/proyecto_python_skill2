@@ -2,6 +2,7 @@ import clientes
 import instructores 
 import vehiculos
 import citas
+from utilidades import validar_si_no
 from persistencia import inicializar_datos
 
 def mostrar_banner(): 
@@ -93,6 +94,7 @@ def reporte_cliente():
     
     print("\n--- REPORTE DE CLIENTE ---")
     ver_antes = input("¿Deseas ver la lista de clientes activos antes de buscar? (S/N): ").strip().lower()
+    validador=validar_si_no
     if ver_antes == "s":
         from utilidades import formatear_lista
         formatear_lista(
