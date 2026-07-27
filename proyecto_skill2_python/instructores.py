@@ -6,7 +6,7 @@ from utilidades import validar_documento_inicio, validar_si_no, validar_nombre
 from utilidades import limpiar_entrada, obtener_entrada_segura, esta_activo, esta_inactivo,validar_si
 #import utilidades as util
 ARCHIVO = "instructores"
-ESPECIALIDADES_VALIDAS = ["moto", "carro"]
+ESPECIALIDADES_VALIDAS = ["moto", "carro","ambos"]
 
 
 def importar_intructores_desde_json(ruta_archivo: str, reemplazar: bool = False) -> bool:
